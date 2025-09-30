@@ -16,7 +16,13 @@ function App() {
 
       <section className="articles-section">
         <h2>Articoli</h2>
-        <ul></ul>
+        <ul>
+          {/*.map per trasformare ogni oggetto nell'array "articles" in un
+          elemento */}
+          {articles.map((article, index) => (
+            <li key={index}>{article.title}</li>
+          ))}
+        </ul>
       </section>
     </div>
   );
